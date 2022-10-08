@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    font: 16px Tahoma, sans-serif;
+}
+
+body {
+    background-color: silver;
+}
+
+#tweet {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 640px;
+    height: auto;
+    padding: 30px;
+    padding-top: 24px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#headerLeft {
+    height: 64px;
+    width: 64px;
+    float: left;
+}
+
+#headerRight {
+    height: 44px;
+    width: auto;
+    margin-left: 70px;
+    padding: 10px;
+}
+
+#pic {
+    background-color: gray;
+    border-radius: 32px;
+}
+
+#name {
+    font-weight: bold;
+}
+
+#handle {
+    margin-top: 2px;
+}
+
+#quote {
+    margin-top: 10px;
+    color: #222222;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+span {
+    color: #1d9bf0;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#button {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 14px;
+}
