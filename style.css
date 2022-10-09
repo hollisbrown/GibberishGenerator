@@ -23,8 +23,8 @@ body {
     #tweet {
         margin: auto;
         margin-top: 40px;
-        width: 75%;
-        margin:5%;
+        width: auto;
+        margin:30px;
         height: auto;
         padding: 30px;
         padding-top: 24px;
