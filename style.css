@@ -11,12 +11,26 @@ body {
 #tweet {
     margin: auto;
     margin-top: 40px;
-    width: 340px;
+    width: 640px;
     height: auto;
     padding: 30px;
     padding-top: 24px;
     background-color: white;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    #tweet {
+        margin: auto;
+        margin-top: 40px;
+        width: 75%;
+        margin:5%;
+        height: auto;
+        padding: 30px;
+        padding-top: 24px;
+        background-color: white;
+        border-radius: 10px;
+    }     
 }
 
 #headerLeft {
@@ -58,10 +72,15 @@ span {
     font-weight: 100;
 }
 
+#buttonDiv {
+    position:absolute;
+    margin-top:300px;
+    width:100%;
+    text-align: center;
+    z-index:5;
+}
+
 #button {
-    display: block;
-    margin: auto;
-    margin-top: 30px;
-    padding: 10px;
-    font-size: 14px;
+    padding: 20px;
+    font-size: 18px;
 }

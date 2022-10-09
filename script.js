@@ -14,7 +14,7 @@ var names = [
 ]
 
 var words = [
-    ["#Bitcoin", "#Blockchain", "#DeFi", "#Crypto", "#Web3"],
+    ["#Bitcoin"],
     ["is a swarm of", "is an army of", "is a pack of","is a storm of", "is a gathering of", "is a horde of", "is a platoon of", "is a battalion of","is a brigade of","is a squadron of", "is a squad of", "is a war of", "is a stream of","is a vortex of","is a beam of","is a fully decentralised web of","is a network of"],
     ["cyber", "cyborg", "android", "energy", "space", "killer", "astral", "plasma", "nano", "fire", "dark matter", "quantum", "digital", "computer", "web3", "lightning"],
     ["hornets", "wasps", "bees", "ants", "bulls", "whales", "sharks", "eagles", "tigers", "lions", "wolves", "rhinos", "woodpeckers", "vipers", "leopards", "lizards", "wizards","demi-gods", "warriors", "jedis"],
@@ -48,10 +48,10 @@ function generatePicture() {
 
     let colBackground = "rgb(" + (Math.random() * 80 + 70).toString() + ", " + (Math.random() * 80 + 70).toString() + ", " + (Math.random() * 80 + 70).toString() +")";
     let colBody = "rgb(" + (Math.random() * 90 + 110).toString() + "," + (Math.random() * 90 + 110).toString() + "," + (Math.random() * 90 + 110).toString() +")";
-    let colHead = "rgb(" + (Math.random() * 10 + 240).toString() + "," + (Math.random() * 10 + 180).toString() + "," + (Math.random() * 10 + 90).toString() +")";
+    let colHead = "rgb(" + (Math.random() * 50 + 210).toString() + "," + (Math.random() * 30 + 150).toString() + "," + (Math.random() * 10 + 150).toString() +")";
 
     let colHair = "rgb(" + (Math.random() * 150 + 30).toString() + "," + (Math.random() * 150 + 30).toString() + "," + (Math.random() * 150 + 30).toString() +")";
-    let colLaser = "rgb(255,0,0)";
+    let colLaser = "rgb(255,100,100)";
     let colBlack = "rgb(30,30,30)";
     let colWhite = "rgb(253,253,253)";
 
@@ -68,17 +68,10 @@ function generatePicture() {
     ctx.lineTo(w/2,h*0.8);
     ctx.stroke();
 
-    //head
-    ctx.lineWidth = 20;
-    ctx.strokeStyle = colHead;
-    ctx.beginPath();
-    ctx.moveTo(w / 2, h * 0.5);
-    ctx.lineTo(w / 2, h * 0.3);
-    ctx.stroke();
-
     let hairOffsetX = (Math.random() - 0.5) * w / 6;
     let hairOffsetY = (Math.random() - 0.5) * w / 6;
-    let hairWidth = Math.random() * 10 + 20;
+    let hairWidth = Math.random() * 10 + 30;
+
     //hair
     ctx.lineWidth = hairWidth;
     ctx.strokeStyle = colHair;
@@ -87,28 +80,38 @@ function generatePicture() {
     ctx.lineTo(w / 2 - w * 0.1 + hairOffsetX, h * 0.1 - hairOffsetY);
     ctx.stroke();
 
+    //head
+    ctx.lineWidth = 20;
+    ctx.strokeStyle = colHead;
+    ctx.beginPath();
+    ctx.moveTo(w / 2, h * 0.5);
+    ctx.lineTo(w / 2, h * 0.3);
+    ctx.stroke();
+
+
+
     //eyes
     let eyeOffsetX = (Math.random() - 0.5) * w / 10;
     let eyeOffsetY = (Math.random() - 0.5) * w / 10;
     let eyeLeftX = (w / 2 - w * 0.05) + eyeOffsetX;
-    let eyeLeftY = h * 0.35 + eyeOffsetY;
+    let eyeLeftY = h * 0.4 + eyeOffsetY;
     let eyeRightX = (w / 2 + w * 0.05) + eyeOffsetX;
-    let eyeRightY = h * 0.35 + eyeOffsetY;
+    let eyeRightY = h * 0.4 + eyeOffsetY;
 
-    ctx.lineWidth = 4;
+    ctx.lineWidth = 7;
     ctx.strokeStyle = colBlack;
     ctx.beginPath();
     ctx.moveTo(eyeLeftX, eyeLeftY);
-    ctx.lineTo(eyeLeftX, eyeLeftY * 1.1);
+    ctx.lineTo(eyeLeftX, eyeLeftY * 0.95);
     ctx.stroke();
     ctx.beginPath();
     ctx.moveTo(eyeRightX, eyeRightY);
-    ctx.lineTo(eyeRightX, eyeRightY * 1.1);
+    ctx.lineTo(eyeRightX, eyeRightY * 0.95);
     ctx.stroke();
 
     let laserOffset = (Math.random() - 0.5) * w;
     //lasers
-    ctx.lineWidth = 5;
+    ctx.lineWidth = 7;
     ctx.strokeStyle = colLaser;
     ctx.beginPath();
     ctx.moveTo(eyeLeftX, eyeLeftY);
@@ -119,7 +122,7 @@ function generatePicture() {
     ctx.lineTo(eyeRightX + laserOffset * 1.2, eyeRightY * 4);
     ctx.stroke();
 
-    ctx.lineWidth = 3;
+    ctx.lineWidth = 4;
     ctx.strokeStyle = colWhite;
     ctx.beginPath();
     ctx.moveTo(eyeLeftX, eyeLeftY);
