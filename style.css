@@ -5,32 +5,18 @@
 }
 
 body {
-    background-color: silver;
+    background-color: #e4e4e4;
 }
 
 #tweet {
     margin: auto;
     margin-top: 40px;
-    width: 640px;
+    width: 620px;
     height: auto;
-    padding: 30px;
-    padding-top: 24px;
+    padding: 40px;
+    padding-top: 34px;
     background-color: white;
     border-radius: 10px;
-}
-
-@media only screen and (max-width: 700px) {
-    #tweet {
-        margin: auto;
-        margin-top: 40px;
-        width: auto;
-        margin:30px;
-        height: auto;
-        padding: 30px;
-        padding-top: 24px;
-        background-color: white;
-        border-radius: 10px;
-    }     
 }
 
 #headerLeft {
@@ -44,6 +30,8 @@ body {
     width: auto;
     margin-left: 70px;
     padding: 10px;
+
+    font-size:16px;
 }
 
 #pic {
@@ -60,26 +48,64 @@ body {
 }
 
 #quote {
-    margin-top: 10px;
+    margin-top: 20px;
     color: #222222;
-    font-size: 20px;
-    font-weight: 100;
+    font-size:20px;
+    line-height: 27px;
 }
 
 span {
     color: #1d9bf0;
     font-size: 20px;
-    font-weight: 100;
-}
-
-#buttonDiv {
-    margin:auto;
-    margin-top:20px;
-    text-align: center;
-    width:300px;
 }
 
 #button {
-    padding: 20px;
-    font-size: 18px;
+    display:block;
+    margin: auto;
+    margin-top: 40px;
+    padding: 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    border:1px solid #6e6e6e;
+}
+
+#button:hover{
+    background-color:white;
+}
+
+@media only screen and (max-width: 700px) {
+    #tweet {
+        width: auto;
+        height: auto;
+        margin: 15px;
+        margin-top: 40px;
+        padding: 40px;
+    }
+
+    #button {
+        padding: 35px;
+        font-size: 22px;
+    }
+
+    #quote{
+        margin-top:30px;
+        font-size:30px;
+        line-height: 37px;
+    }
+
+    span{
+        font-size: 30px;
+    }
+
+    #name{
+        margin-top:-5px;
+        font-size: 20px;
+    }
+
+    #handle{
+        margin-top: 0px;
+        font-size: 20px;
+    }
+
 }
