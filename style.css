@@ -73,11 +73,9 @@ span {
 }
 
 #buttonDiv {
-    position:absolute;
-    margin-top:300px;
-    width:100%;
+    margin:auto;
+    margin-top:20px;
     text-align: center;
-    z-index:5;
 }
 
 #button {
