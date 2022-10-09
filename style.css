@@ -5,8 +5,7 @@
 }
 
 body {
-    /*background-color: #e4e4e4;*/
-    background-color: red;
+    background-color: #e4e4e4;
 }
 
 #tweet {
@@ -63,8 +62,10 @@ span {
 #button {
     display:block;
     margin: auto;
-    margin-top: 40px;
-    padding: 30px;
+    margin-top: 20px;
+    padding:15px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 1.1em;
     border-radius: 5px;
     background-color: #f6f6f6;
@@ -80,32 +81,29 @@ span {
         width: 80%;
         padding: 8%;
         margin: 2%;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     #button {
-        padding: 35px;
         font-size: 22px;
     }
 
     #quote{
         margin-top:30px;
-        font-size:30px;
-        line-height: 37px;
+        font-size:26px;
+        line-height: 33px;
     }
 
     span{
-        font-size: 30px;
+        font-size: 26px;
     }
 
     #name{
-        margin-top:-5px;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #handle{
         margin-top: 0px;
-        font-size: 20px;
+        font-size: 18px;
     }
-
 }
